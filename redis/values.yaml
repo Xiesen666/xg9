@@ -18,7 +18,7 @@ global:
   imagePullSecrets: []
   storageClass: ""
   redis:
-    password: "123456Aa"
+    password: ""
 
 ## @section Common parameters
 ##
@@ -106,10 +106,10 @@ architecture: replication
 auth:
   ## @param auth.enabled Enable password authentication
   ##
-  enabled: true
+  enabled: false
   ## @param auth.sentinel Enable password authentication on sentinels too
   ##
-  sentinel: true
+  sentinel: false
   ## @param auth.password Redis&trade; password
   ## Defaults to a random 10-character alphanumeric string if not set
   ##
